@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafetería La familia</title>
+    <title>Cafetería La familia - Inicio</title>
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -14,75 +14,99 @@
 </head>
 <body>
     <!--Encabezado-->
-    <header>
-        <h1>Cafetería La familia</h1>
-        <nav>
-            <ul>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            
-        </nav>
+    <header class="bg-brown text-white p-3">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <h1 class="mb-0">Cafetería La Familia</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a href="index.html" class="nav-link active text-white">Inicio</a></li>
+          <li class="nav-item"><a href="menu.html" class="nav-link text-white">Menú</a></li>
+          <li class="nav-item"><a href="contacto.html" class="nav-link text-white">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
     </header>
 
-    <!--Sección de nosotros-->
-    <section id="nosotros">
-        <h2>Nosotros</h2>
-        <article>
-            <p>En Cafetería La familia nos apasiona dar la mejor atención a nuestros clientes y que puedan venir a disfrutar junto 
+    <main class="container my-5">
+        <section id="nosotros" class="mb-5">
+            <h2 class="text-brown mb-3 text-center">Nosotros</h2>
+            <article>
+            <p class="fs-5 text-center w-75 mx-auto">
+                En Cafetería La familia nos apasiona dar la mejor atención a nuestros clientes y que puedan venir a disfrutar junto 
                 a su familia y pasar un lindo momento.
                 Ofrenciendo un ambiente cordial y feliz para todos.
             </p>
-        </article>
-    </section>
-    
-    <!--Sección de servicios-->
-    <section id="servicios">
-        <h2>Servicios</h2>
+            </article>
+        </section>
+
+       <section id="servicios" class="mb-5">
+        <h2 class="text-brown mb-3 text-center">Servicios</h2>
         <article>
             <ul>
                 <li>Café de especialidad</li>
                 <li>Repostería</li>
             </ul>
         </article>
+        </section> 
+
+        <!-- Sección de galería -->
+     <section id="galeria" class="py-5 bg-light">
+      <div class="container">
+      <h2 class="text-center text-brown mb-4">Galería</h2>
+      <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.5Hg29plmNC8U_og2AIQFxAHaE8&pid=Api&P=0&h=180" class="d-block w-100 gallery-img" alt="Taza de café">
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.8GR3E9QycaVVZ9gozn9u2gHaGI&pid=Api&P=0&h=180" class="d-block w-100 gallery-img" alt="Porción de Lemon Pie">
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://tse2.mm.bing.net/th?id=OIP.E4nWGHNqfx_rQcxOL9xzxQHaGo&pid=Api&P=0&h=180" class="d-block w-100 gallery-img" alt="Selva negra">
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo9JtHoavzWg81gMFuWnSYEYLnihpuDgOjug&s" class="d-block w-100 gallery-img" alt="Tostados">
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://media.scoolinary.app/images/2023/07/294_Bachour_banner2.jpg" class="d-block w-100 gallery-img" alt="Facturas">
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://jugen.com.mx/cdn/shop/articles/3_720x.jpg?v=1522964420" class="d-block w-100 gallery-img" alt="Jugos">
+        </div>
+
+      </div>
+
+      <!-- Flechas -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+     </div>
+     </div>
     </section>
 
-    <!--Sección de galería-->
-    <section id="galeria">
-        <h2>Galería</h2>
-        <article>
-            <img src="https://tse4.mm.bing.net/th?id=OIP.5Hg29plmNC8U_og2AIQFxAHaE8&pid=Api&P=0&h=180" alt="Taza de café">
-            <img src="https://tse4.mm.bing.net/th?id=OIP.8GR3E9QycaVVZ9gozn9u2gHaGI&pid=Api&P=0&h=180" alt="Porción de Lemon Pie">
-            <img src="https://tse2.mm.bing.net/th?id=OIP.E4nWGHNqfx_rQcxOL9xzxQHaGo&pid=Api&P=0&h=180" alt="Selva negra">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo9JtHoavzWg81gMFuWnSYEYLnihpuDgOjug&s" alt="Tostados">
-            <img src="https://media.scoolinary.app/images/2023/07/294_Bachour_banner2.jpg" alt="Facturas">
-            <img src="https://jugen.com.mx/cdn/shop/articles/3_720x.jpg?v=1522964420" alt="Jugos">
-        </article>
-    </section>
 
-    <!--Sección de contacto-->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+    </main>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-
-            <button type="submit">Enviar</button>
-         </form>
-    </section>
-
-    <footer>
-        <p>&copy 2025 Cafetería La Familia.Todos los derechos reservados</p>
-        <li><a href="#">Términos y condiciones</a></li>
+    <footer class="bg-brown text-white text-center p-3">
+    <p>&copy; 2025 Cafetería La Familia. Todos los derechos reservados.</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Términos y condiciones</a></li>
+    </ul>
     </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
