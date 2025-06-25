@@ -3,8 +3,10 @@ body {
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
+/*Color café*/
 .bg-brown {
   background-color: #6b4f3a;
 }
@@ -13,29 +15,35 @@ body {
   color: #6b4f3a;
 }
 
+/*Menú activo*/
 .nav-link.active {
   font-weight: bold;
   text-decoration: underline;
 }
 
+/*Imágenes de Galería*/
 .gallery-img {
   max-height: 400px;
   width: auto;
   object-fit: contain;
   margin: 0 auto;
 }
+
+/*Carousel*/
 .carousel-item {
   text-align: center;
   background-color: #fff; /* fondo neutro si la imagen no llena todo */
   padding: 1rem;
 }
 
+/*Icono de control del Carousel*/
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.5); /* fondo para visibilidad */
   border-radius: 50%;
 }
 
+/*Servicios*/
 #servicios ul {
   text-align: center;
   padding-left: 0;
@@ -47,8 +55,15 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/*Botones*/
 .btn-brown {
   background-color: #6b4f3a;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 .btn-brown:hover {
@@ -82,3 +97,81 @@ body {
   margin: 0.5rem 0 0;
   color: #444;
 }
+
+/* Formularios */
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .item {
+    margin: 1rem 1rem;
+    max-width: 100%;
+  }
+
+  form.w-75 {
+    width: 100% !important;
+  }
+}
+
+/* Estilos base: para pantallas grandes (computadora) */
+body {
+  font-size: 16px;
+  padding: 20px;
+}
+
+/* Tablets y notebooks: pantallas entre 768px y 1024px */
+@media (max-width: 1024px) and (min-width: 768px) {
+  body {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .item {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+  nav ul {
+    justify-content: center; /* centramos menú */
+  }
+}
+
+/* Celulares: pantallas menores a 767px */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  header .container,
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    padding-left: 0;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .item {
+    max-width: 100%;
+    margin: 0.5rem auto;
+    padding: 0.8rem;
+  }
+
+  .gallery-img {
+    max-height: 250px;
+  }
+}
+

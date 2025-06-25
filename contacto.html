@@ -27,25 +27,25 @@
     <main class="container my-5">
      <h2 class="text-brown mb-4 text-center">Contacto</h2>
 
-     <form action="#" method="post"class="w-75 mx-auto">
+     <form action="#" method="post"class="w-75 mx-auto" aria-label="Formulario de contacto">
       <div class="mb-3">
         <label for="nombre" class="form-label fw-bold">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required class="form-control" />
+        <input type="text" id="nombre" name="nombre" required class="form-control" aria-required="true"/>
       </div>
 
       <div class="mb-3">
         <label for="apellido" class="form-label fw-bold">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required class="form-control" />
+        <input type="text" id="apellido" name="apellido" required class="form-control" aria-required="true"/>
       </div>
 
       <div class="mb-3">
         <label for="email" class="form-label fw-bold">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required class="form-control" />
+        <input type="email" id="email" name="email" required class="form-control" aria-required="true"/>
       </div>
 
       <div class="mb-3">
         <label for="mensaje" class="form-label fw-bold">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required rows="5" class="form-control"></textarea>
+        <textarea id="mensaje" name="mensaje" required rows="5" class="form-control" aria-required="true"></textarea>
       </div>
 
       <button type="submit" class="btn btn-brown text-white">Enviar</button>
